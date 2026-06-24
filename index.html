@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikat NQA - PT. Lab Beru</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Menggunakan kombinasi font Sans-Serif modern yang persis dengan tampilan browser mobile */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            flex: 1;
+        }
+
+        .header-logo {
+            padding: 10px 5px;
+        }
+        .header-logo img {
+            height: 55px;
+            display: block;
+        }
+
+        /* Tabel Utama */
+        .cert-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        .cert-table tr {
+            border-bottom: 2px solid #ffffff;
+        }
+
+        .cert-table td {
+            padding: 10px 12px;
+            vertical-align: top;
+            line-height: 1.3;
+        }
+
+        /* Kolom Kiri (Label) - Menggunakan font tebal & agak rapat sesuai foto */
+        .cert-table td.label {
+            background-color: #0070c0;
+            color: #ffffff;
+            font-weight: 700; /* Font tebal tegap */
+            text-align: right;
+            width: 40%;
+            letter-spacing: -0.3px;
+        }
+
+        /* Kolom Kanan (Value) - Font normal tanpa serif */
+        .cert-table td.value {
+            background-color: #f2f2f2;
+            color: #000000;
+            font-weight: 400;
+            width: 60%;
+        }
+
+        /* Baris Judul Utama Orange */
+        .cert-table tr.main-title td {
+            background-color: #ff9933;
+            color: #ffffff;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .status-expired {
+            color: #404040;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0070c0;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px 10px;
+            font-size: 16px;
+            font-weight: 400;
+            width: 100%;
+            letter-spacing: 0.3px;
+        }
+
+        @media (max-width: 480px) {
+            .cert-table {
+                font-size: 15px;
+            }
+            .cert-table td {
+                padding: 9px 10px;
+            }
+            .cert-table tr.main-title td {
+                font-size: 18px;
+            }
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header-logo">
+            <svg width="55" height="55" viewBox="0 0 100 100">
+                <img src="images.jpeg" alt="">
+            </svg>
+        </div>
+
+        <table class="cert-table">
+            <tr class="main-title">
+                <td colspan="2">PT. Lab Beru</td>
+            </tr>
+            <tr>
+                <td class="label">CB Cert NO.</td>
+                <td class="value">49809</td>
+            </tr>
+            <tr>
+                <td class="label">Company Name</td>
+                <td class="value">PT. Lab Beru</td>
+            </tr>
+            <tr>
+                <td class="label">Company Address</td>
+                <td class="value">Komp. Ruko Bengkong Mas Blok C No. 4 - 8<br>Bengkong, Batam,<br>Indonesia</td>
+            </tr>
+            <tr>
+                <td class="label">Scope</td>
+                <td class="value">Production and assembly of low voltage electrical panel</td>
+            </tr>
+            <tr>
+                <td class="label">Standard</td>
+                <td class="value">ISO 9001:2015</td>
+            </tr>
+            <tr>
+                <td class="label">Accreditation Symbol</td>
+                <td class="value">UKAS</td>
+            </tr>
+            <tr>
+                <td class="label">Issue Date</td>
+                <td class="value">09 July 2015</td>
+            </tr>
+            <tr>
+                <td class="label">Previous Certificate Expiry</td>
+                <td class="value">14 March 2023</td>
+            </tr>
+            <tr>
+                <td class="label">Reissue Date</td>
+                <td class="value">20 March 2023</td>
+            </tr>
+            <tr>
+                <td class="label">Expires Date</td>
+                <td class="value">14 March 2026</td>
+            </tr>
+            <tr>
+                <td class="label">Status</td>
+                <td class="value"><span class="status-expired">Expired</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        Copyright © 2026 SNQA. All rights reserved.
+    </footer>
+
+</body>
+</html>
