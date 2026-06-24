@@ -13,28 +13,25 @@
 }
 
 body{
-    background:#ffffff;
+    background:#fff;
     font-family:"Times New Roman", Times, serif;
 }
 
 .container{
-    width:760px;
+    width:100%;
+    max-width:700px;
     margin:0 auto;
-    background:#ffffff;
+    background:#fff;
 }
 
-/* =========================
-   LOGO
-========================= */
-
 .logo-area{
-    padding:15px 0 10px 15px;
-    background:#ffffff;
+    padding:15px 0 10px 12px;
+    background:#fff;
 }
 
 .logo-slot{
-    width:95px;
-    height:95px;
+    width:85px;
+    height:85px;
 }
 
 .logo-slot img{
@@ -44,22 +41,14 @@ body{
     display:block;
 }
 
-/* =========================
-   COMPANY TITLE
-========================= */
-
 .company-title{
     background:#ef9137;
-    color:#ffffff;
+    color:#fff;
     text-align:center;
-    font-size:34px;
+    font-size:26px;
     font-weight:bold;
-    padding:14px 0;
+    padding:10px 0;
 }
-
-/* =========================
-   TABLE
-========================= */
 
 table{
     width:100%;
@@ -70,118 +59,93 @@ table{
 th{
     width:41%;
     background:#006eb8;
-    color:#ffffff;
-    border:2px solid #ffffff;
+    color:#fff;
+    border:2px solid #fff;
     text-align:center;
     vertical-align:middle;
-    font-size:29px;
+    font-size:20px;
     font-weight:bold;
     line-height:1.05;
-    padding:8px;
+    padding:6px;
 }
 
 td{
     background:#f3f3f3;
-    color:#000000;
-    border:2px solid #ffffff;
-    font-size:28px;
-    line-height:1.1;
-    padding:8px;
-    vertical-align:top;
+    color:#000;
+    border:2px solid #fff;
+    font-size:19px;
+    line-height:1.15;
+    padding:7px 8px;
+    vertical-align:middle;
 }
 
 .address{
-    line-height:1.15;
+    line-height:1.2;
 }
 
 .scope{
-    line-height:1.15;
+    line-height:1.2;
 }
-
-/* =========================
-   EMPTY SPACE BEFORE FOOTER
-   SESUAI SCREENSHOT
-========================= */
 
 .footer-space{
-    height:220px;
-    background:#ffffff;
+    height:180px;
+    background:#fff;
 }
-
-/* =========================
-   FOOTER
-========================= */
 
 .footer{
-    width:100%;
     background:#006eb8;
-    color:#ffffff;
+    color:#fff;
     text-align:center;
-    font-size:24px;
+    font-size:18px;
     padding:8px 0;
-    font-weight:normal;
 }
 
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:768px){
-
-    .container{
-        width:100%;
-    }
-
-    .logo-area{
-        padding-left:10px;
-    }
+@media(max-width:480px){
 
     .logo-slot{
-        width:85px;
-        height:85px;
+        width:75px;
+        height:75px;
     }
 
     .company-title{
-        font-size:28px;
+        font-size:24px;
     }
 
     th{
-        font-size:22px;
+        font-size:18px;
+        padding:5px;
     }
 
     td{
-        font-size:21px;
+        font-size:17px;
+        padding:6px;
     }
 
     .footer{
-        font-size:20px;
+        font-size:16px;
     }
 
     .footer-space{
-        height:220px;
+        height:160px;
     }
 }
 </style>
-
 </head>
+
 <body>
 
 <div class="container">
 
-    <!-- LOGO NQA -->
     <div class="logo-area">
         <div class="logo-slot">
-            <!-- GANTI DENGAN FILE LOGO NQA -->
             <img src="images.jpeg" alt="NQA Logo">
         </div>
     </div>
 
-    <!-- COMPANY NAME -->
     <div class="company-title">
         PT. Lab Beru
     </div>
 
-    <!-- CERTIFICATE TABLE -->
     <table>
 
         <tr>
@@ -260,10 +224,8 @@ td{
 
     </table>
 
-    <!-- SPASI PUTIH BESAR SEPERTI SCREENSHOT -->
     <div class="footer-space"></div>
 
-    <!-- FOOTER -->
     <div class="footer">
         Copyright © 2029 SNQA. All rights reserved.
     </div>
