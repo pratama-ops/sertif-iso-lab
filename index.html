@@ -3,269 +3,272 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NQA Certificate - PT. Lab Beru</title>
+<title>PT. Lab Beru Certificate</title>
 
 <style>
-:root{
-    --blue:#0068b3;
-    --orange:#f28c35;
-    --border:#ffffff; /* Diubah ke putih sesuai foto */
-    --cell:#f7f7f7;
-}
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-body {
+body{
     background:#ffffff;
-    font-family: Cambria, "Times New Roman", serif;
-    color:#000;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family:"Times New Roman", Times, serif;
 }
 
-.wrapper{
-    width:100%;
-    max-width:1000px;
+.container{
+    width:760px;
     margin:0 auto;
-    background:#fff;
-    flex: 1;
+    background:#ffffff;
 }
 
-.logo{
-    padding:14px 12px;
-    background:#fff;
+/* =========================
+   LOGO
+========================= */
+
+.logo-area{
+    padding:15px 0 10px 15px;
+    background:#ffffff;
 }
 
-.logo img{
-    width:85px;
+.logo-slot{
+    width:95px;
+    height:95px;
+}
+
+.logo-slot img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
     display:block;
 }
 
-/* Menggunakan SVG sebagai fallback jika file nqa.png tidak ada */
-.logo-svg {
-    width: 65px;
-    height: 65px;
-    display: block;
-}
+/* =========================
+   COMPANY TITLE
+========================= */
 
 .company-title{
-    background:var(--orange);
-    color:#fff;
+    background:#ef9137;
+    color:#ffffff;
     text-align:center;
-    font-family: Cambria, "Times New Roman", serif;
-    font-weight:700;
     font-size:34px;
-    line-height:1.08;
-    padding:10px 14px;
+    font-weight:bold;
+    padding:14px 0;
 }
+
+/* =========================
+   TABLE
+========================= */
 
 table{
     width:100%;
     border-collapse:collapse;
+    table-layout:fixed;
+}
+
+th{
+    width:41%;
+    background:#006eb8;
+    color:#ffffff;
+    border:2px solid #ffffff;
+    text-align:center;
+    vertical-align:middle;
+    font-size:29px;
+    font-weight:bold;
+    line-height:1.05;
+    padding:8px;
 }
 
 td{
-    border:2px solid var(--border); /* Tebal border disesuaikan */
-}
-
-.label{
-    width:40%; /* Disesuaikan ke 40% agar teks label tidak terlalu sempit */
-    background:var(--blue);
-    color:#fff;
-    text-align:right; /* Diratakan kanan sesuai foto asli */
-    vertical-align:top;
-
-    font-family: Cambria, "Times New Roman", serif;
-    font-weight:700;
+    background:#f3f3f3;
+    color:#000000;
+    border:2px solid #ffffff;
     font-size:28px;
     line-height:1.1;
-
-    padding:12px 14px;
-}
-
-.value{
-    width:60%;
-    background:var(--cell);
-    color:#000;
+    padding:8px;
     vertical-align:top;
-
-    font-family: Cambria, "Times New Roman", serif;
-    font-weight:400;
-    font-size:28px;
-    line-height:1.2;
-
-    padding:12px 14px;
 }
 
-.status-expired {
-    color: #595959;
+.address{
+    line-height:1.15;
 }
 
-footer {
-    background-color: var(--blue);
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 10px;
-    font-size: 16px;
-    margin-top: 25px;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+.scope{
+    line-height:1.15;
 }
 
-/* Tablet */
-@media (max-width:768px){
+/* =========================
+   EMPTY SPACE BEFORE FOOTER
+   SESUAI SCREENSHOT
+========================= */
+
+.footer-space{
+    height:220px;
+    background:#ffffff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    width:100%;
+    background:#006eb8;
+    color:#ffffff;
+    text-align:center;
+    font-size:24px;
+    padding:8px 0;
+    font-weight:normal;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .container{
+        width:100%;
+    }
+
+    .logo-area{
+        padding-left:10px;
+    }
+
+    .logo-slot{
+        width:85px;
+        height:85px;
+    }
+
     .company-title{
-        font-size:24px;
+        font-size:28px;
     }
 
-    .label{
-        font-size:18px;
+    th{
+        font-size:22px;
     }
 
-    .value{
-        font-size:18px;
-    }
-}
-
-/* Mobile */
-@media (max-width:480px){
-    .logo{
-        padding:10px;
+    td{
+        font-size:21px;
     }
 
-    .logo img, .logo-svg {
-        width:55px;
-        height:55px;
+    .footer{
+        font-size:20px;
     }
 
-    .company-title{
-        font-size:18px;
-        line-height:1.15;
-        padding:8px 10px;
-    }
-
-    .label{
-        font-size:13px;
-        font-weight:700;
-        line-height:1.15;
-        padding:10px 8px;
-    }
-
-    .value{
-        font-size:13px;
-        font-weight:400;
-        line-height:1.25;
-        padding:10px 8px;
-    }
-    
-    footer {
-        font-size: 13px;
-        padding: 10px;
-    }
-}
-
-@media (max-width:360px){
-    .company-title{
-        font-size:16px;
-    }
-
-    .label{
-        font-size:12px;
-    }
-
-    .value{
-        font-size:12px;
+    .footer-space{
+        height:220px;
     }
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="wrapper">
+<div class="container">
 
-    <div class="logo">
-        <svg class="logo-svg" viewBox="0 0 100 100">
-            <img src="images.jpeg" alt="">
-        </svg>
+    <!-- LOGO NQA -->
+    <div class="logo-area">
+        <div class="logo-slot">
+            <!-- GANTI DENGAN FILE LOGO NQA -->
+            <img src="images.jpeg" alt="NQA Logo">
+        </div>
     </div>
 
+    <!-- COMPANY NAME -->
     <div class="company-title">
         PT. Lab Beru
     </div>
 
+    <!-- CERTIFICATE TABLE -->
     <table>
+
         <tr>
-            <td class="label">CB Cert NO.</td>
-            <td class="value">49809</td>
+            <th>CB Cert NO.</th>
+            <td>49809</td>
         </tr>
 
         <tr>
-            <td class="label">Company Name</td>
-            <td class="value">PT. Lab Beru</td>
+            <th>Company Name</th>
+            <td>PT. Lab Beru</td>
         </tr>
 
         <tr>
-            <td class="label">Company<br>Address</td>
-            <td class="value">
-                Komp. Ruko Bengkong Mas Blok C No. 4 - 8<br>Bengkong, Batam,<br>Indonesia
+            <th>
+                Company<br>
+                Address
+            </th>
+            <td class="address">
+                Komp. Ruko Bengkong<br>
+                Mas Blok C No. 4 - 8<br>
+                Bengkong, Batam,<br>
+                Indonesia
             </td>
         </tr>
 
         <tr>
-            <td class="label">Scope</td>
-            <td class="value">
-                Production and assembly of low voltage electrical panel
+            <th>Scope</th>
+            <td class="scope">
+                Production and assembly<br>
+                of low voltage electrical<br>
+                panel
             </td>
         </tr>
 
         <tr>
-            <td class="label">Standard</td>
-            <td class="value">ISO 9001:2015</td>
+            <th>Standard</th>
+            <td>ISO 9001:2015</td>
         </tr>
 
         <tr>
-            <td class="label">Accreditation<br>Symbol</td>
-            <td class="value">UKAS</td>
+            <th>
+                Accreditation<br>
+                Symbol
+            </th>
+            <td>UKAS</td>
         </tr>
 
         <tr>
-            <td class="label">Issue Date</td>
-            <td class="value">09 July 2015</td>
+            <th>Issue Date</th>
+            <td>09 July 2015</td>
         </tr>
 
         <tr>
-            <td class="label">Previous<br>Certificate<br>Expiry</td>
-            <td class="value">14 March 2026</td>
+            <th>
+                Previous<br>
+                Certificate<br>
+                Expiry
+            </th>
+            <td>14 March 2026</td>
         </tr>
 
         <tr>
-            <td class="label">Reissue Date</td>
-            <td class="value">24 June 2026</td>
+            <th>Reissue Date</th>
+            <td>24 June 2026</td>
         </tr>
 
         <tr>
-            <td class="label">Expires Date</td>
-            <td class="value">24 June 2029</td>
+            <th>Expires Date</th>
+            <td>24 June 2029</td>
         </tr>
 
         <tr>
-            <td class="label">Status</td>
-            <td class="value"><span class="status-expired">Valid</span></td>
+            <th>Status</th>
+            <td>Valid</td>
         </tr>
+
     </table>
 
-</div>
+    <!-- SPASI PUTIH BESAR SEPERTI SCREENSHOT -->
+    <div class="footer-space"></div>
 
-<footer>
-    Copyright © 2026 SNQA. All rights reserved.
-</footer>
+    <!-- FOOTER -->
+    <div class="footer">
+        Copyright © 2029 SNQA. All rights reserved.
+    </div>
+
+</div>
 
 </body>
 </html>
